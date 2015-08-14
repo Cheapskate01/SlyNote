@@ -214,6 +214,7 @@ button.dismiss {
   color: inherit;
   font-size: 20px;
   margin-right: 20px;
+  padding: 0;
 }
 
 button.dismiss:hover {
@@ -223,7 +224,6 @@ button.dismiss:hover {
 .alert-success a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   color: #313C2C;
   font-size: 14px;
 }
@@ -231,22 +231,72 @@ button.dismiss:hover {
 .alert-warning a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   color: #515432;
 }
 
 .alert-info a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   color: #435461;
 }
 
 .alert-danger a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   color: #5A3333;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #BDB8AD;
+}
+
+button.button {
+  background-color: #EBE7E0;
+  color: black;
+}
+
+button.button-green {
+  background-color: #C2F1AF;
+  color: #52654B;
+}
+
+button.button-blue {
+  background-color: #AFF1EA;
+  color: #657D8E;
+}
+
+button.button-yellow {
+  background-color: #F7FF99;
+  color: #757949;
+}
+
+button.button-red {
+  background-color: #FFA0A0;
+  color: #8A4E4E;
+}
+
+.button-group button {
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+  float: left;
+  border-top: 1px solid #BDB8AD;
+  border-bottom: 1px solid #BDB8AD;
+  border-left: 1px solid #BDB8AD;
+  border-right: 0 !important;
+}
+
+.button-group-leftmost {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.button-group-rightmost {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-right: 1px solid #BDB8AD;
 }
 
 @media screen and (max-width: 860px) {
